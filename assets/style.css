@@ -1,3 +1,92 @@
-section{
-    text-align: right;
+:root{
+    /* add all the common colors and stuff */
+}
+
+/* controls the header properties */
+header{
+    background-color:rgb(13, 223, 6);
+    max-height: 5em;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* controls the navbar main properties */
+nav {
+    display: flex;
+    margin-left:auto;
+}
+
+/* controls the nav bar list properties */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* controls the nav bar link properties */
+nav a {
+    color: #f50be2;
+    padding: 14px 20px;
+    text-decoration:none;
+    text-align: center;
+}
+
+/* code that controls the three main sections */
+.sections{
+    display:flex;
+    /* justify-content: flex-end; */
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+
+/* code that controls the three main sections headers */
+.sections h2{
+    border-right:solid 3px darkblue;
+    flex-basis: 150px;
+    text-align:right;
+    font-size:xx-large;
+    height: 400px; 
+}
+
+/* code that controls the three main sections */
+.sections_work{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+
+/* code that controls the three main sections headers */
+.sections_work h2{
+    border-right:solid 3px darkblue;
+    flex-basis: 150px;
+    text-align:right;
+    font-size:xx-large;
+    height: 400px; 
+}
+
+.sections_work div{
+    flex-basis: auto;
+}
+
+
+.sections_contact{
+    display:flex;
+    /* justify-content: flex-end; */
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+
+/* code that controls the three main sections headers */
+.sections_contact h2{
+    border-right:solid 3px darkblue;
+    flex-basis: 150px;
+    text-align:right;
+    font-size:xx-large;
+    height: 100px; 
 }
