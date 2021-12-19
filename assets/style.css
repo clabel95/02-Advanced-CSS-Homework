@@ -1,18 +1,37 @@
 :root{
     /* add all the common colors and stuff */
+    /* I went with a stylish and sophisticated color pallet */
+    --teal:#2C3531;
+    
+
 }
+*{
+    background-color: #D1E8E2;
+    color:#2C3531;
+}
+
+
+
 
 /* controls the header properties */
 header{
-    background-color:rgb(13, 223, 6);
-    max-height: 5em;
+    background-color:#2C3531;
+    color:white;
+    height: 5em;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
-
+header h1{
+    /* background-color:var(--dark_blue); */
+    background-color:#2C3531;
+    color:white;
+    font-size: 50px;
+}
 /* controls the navbar main properties */
 nav {
+    /* background-color:var(--dark_blue); */
+    background-color:#2C3531;
     display: flex;
     margin-left:auto;
 }
@@ -25,68 +44,191 @@ nav ul {
 
 /* controls the nav bar link properties */
 nav a {
-    color: #f50be2;
+    /* background-color:var(--dark_blue); */
+    background-color:#2C3531;
+    font-size:30px;
+    color: white;
     padding: 14px 20px;
     text-decoration:none;
     text-align: center;
 }
 
-/* code that controls the three main sections */
+
+/* code that controls the about me section */
 .sections{
+    margin-right:2%;
     display:flex;
     /* justify-content: flex-end; */
     align-items:center;
     margin-top:20px;
     margin-bottom:20px;
-    
+    height: 400px;
 }
 
-/* code that controls the three main sections headers */
+/* code that controls the about me header */
 .sections h2{
-    border-right:solid 3px darkblue;
-    flex-basis: 150px;
+    border-right:solid 3px #2C3531;
+    /* flex-basis: 150px; */
+    width:15%;
     text-align:right;
     font-size:xx-large;
-    height: 400px; 
+    height:100%; 
 }
 
-/* code that controls the three main sections */
+.sections p{
+    width:85%;
+    height:100%;
+    /* border:solid red 2px; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* code that controls the work section */
 .sections_work{
+    margin-right:2%;
     display:flex;
     align-items:center;
     margin-top:20px;
     margin-bottom:20px;
-    
+    height: 400px;
 }
 
-/* code that controls the three main sections headers */
+/* code that controls the work header*/
 .sections_work h2{
-    border-right:solid 3px darkblue;
-    flex-basis: 150px;
+    border-right:solid 3px #2C3531;
+    width:15%;
     text-align:right;
     font-size:xx-large;
-    height: 400px; 
+    height:100%;
+     
 }
 
-.sections_work div{
-    flex-basis: auto;
+
+/* this controls the outer box that holds the work examples */
+#outer_box{
+    margin-left:2%;
+    display:flex;
+    flex-direction:column;
+    width:75%;
+    height:100%;
+    /* border:solid 2px; */
+    flex-grow:1;
+    align-items:center;
+    
 }
+#main_project{
+    border:var(--teal) 5px solid;
+    margin-bottom:2%;
+    width: 100%;
+    height:50%;
+    transition:all 0.5s ease-in-out;
+}
+#main_project:hover{
+    box-shadow:inset 0px 0px 10px #116466, 0 0 20px #116466;
+}
+
+#main_project h3{
+    width: 20%;
+    text-align:center;
+    font-size: 1.25em;
+    font-weight:bold;
+    background-color:var(--teal);
+    color:#D1E8E2;
+}
+#main_project p{
+    width: 20%;
+    text-align:center;
+    background-color:var(--teal);
+    color:#D1E8E2;
+}
+
+
+/* this controls the box that holds the 4 projects that will be smaller on screen */
+#smaller_projects{
+    display:flex;
+    /* border:solid red 2px; */
+    width:100%;
+    justify-content: space-between;
+    height:50%;
+}
+
+#left_block{
+    width:48%;
+    display:flex;
+    /* border:solid blue 3px; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#right_block{
+    width:48%;
+    display:flex;
+    /* border:solid blue 3px; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* I was planning on controling all the small projects with a single class
+however I changed my mind because I want to add the background image as a part of the css. 
+I might change it back later. */
+
+.sml_prj{
+    height: 40%;
+    border:var(--teal) 5px solid;
+    transition:all 0.5s ease-in-out;
+}
+.sml_prj:hover{
+    box-shadow:inset 0px 0px 10px #116466, 0 0 20px #116466;
+}
+
+.sml_prj h3{
+    width: 20%;
+    text-align:center;
+    font-size: 1.25em;
+    font-weight:bold;
+    background-color:var(--teal);
+    color:#D1E8E2;
+}
+.sml_prj p{
+    width: 20%;
+    text-align:center;
+    background-color:var(--teal);
+    color:#D1E8E2;
+}
+
+
+
 
 
 .sections_contact{
+    margin-right:2%;
     display:flex;
     /* justify-content: flex-end; */
     align-items:center;
     margin-top:20px;
     margin-bottom:20px;
-    
+    /* border:solid 2px black; */
+    height: 100px;
 }
 
 /* code that controls the three main sections headers */
 .sections_contact h2{
-    border-right:solid 3px darkblue;
-    flex-basis: 150px;
+    border-right:solid 3px #2C3531;
+    width:15%;
     text-align:right;
     font-size:xx-large;
-    height: 100px; 
+    height:100%;
+    
 }
+
+.sections_contact ul {
+    display: flex;
+    width: 75%;
+    height:100%;
+    /* border: solid 2px red; */
+    justify-content: space-between;
+    margin-left:30px;
+    margin-right:30px;
+    padding:10px;
+}
+
