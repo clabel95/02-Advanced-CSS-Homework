@@ -180,16 +180,46 @@ nav a {
 however I changed my mind because I want to add the background image as a part of the css. 
 I might change it back later. */
 
-.sml_prj{
+.sml_prj_1{
+    height: 40%;
+    background-image: url("https://github.com/clabel95/02-Advanced-CSS-Homework/blob/cfe56b4e775b1f813097c351f5f80b44a74a0778/assets/images/Wireframe.png");
+    border:var(--teal) 5px solid;
+    transition:all 0.5s ease-in-out;
+    
+}
+.sml_prj_1:hover{
+    box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+}
+
+.sml_prj_2{
     height: 40%;
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
-.sml_prj:hover{
+.sml_prj_2:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
 }
 
-.sml_prj h3{
+.sml_prj_3{
+    height: 40%;
+    border:var(--teal) 5px solid;
+    transition:all 0.5s ease-in-out;
+}
+.sml_prj_3:hover{
+    box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+}
+
+.sml_prj_4{
+    height: 40%;
+    border:var(--teal) 5px solid;
+    transition:all 0.5s ease-in-out;
+}
+.sml_prj_4:hover{
+    box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+}
+
+
+#smaller_projects h3{
     width: 20%;
     height:50%;
     text-align:center;
@@ -199,7 +229,7 @@ I might change it back later. */
     border-top:solid var(--teal) 5px;
     color:white;
 }
-.sml_prj p{
+#smaller_projects p{
     width: 20%;
     height:50%;
     text-align:center;
@@ -219,7 +249,7 @@ I might change it back later. */
     margin-top:20px;
     margin-bottom:20px;
     /* border:solid 2px black; */
-    height: 100px;
+    height: 120px;
 }
 
 /* code that controls the three main sections headers */
@@ -243,3 +273,13 @@ I might change it back later. */
     padding:10px;
 }
 
+.social_icon{
+    font-size:120px;
+    color:var(--teal);
+    transition:all 0.5s ease-in-out;
+    
+}
+
+ion-icon:hover {
+    color:#116466;
+}
