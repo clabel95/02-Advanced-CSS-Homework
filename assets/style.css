@@ -34,6 +34,14 @@ header h1{
     font-size: 50px;
     padding-right: 1em;
 }
+header span{
+    justify-self:left; 
+    background-color:#2C3531;
+    color:white;
+    font-size: 50px;
+    padding-right: 1em;
+} 
+
 
 header img{
    justify-self:left; 
@@ -363,17 +371,21 @@ ion-icon:hover {
     color:#116466;
 }
 
-@media screen and (max-width:780px){
+@media (max-width:850px){
     header img{
         display:none;
     }
     .sections_contact h2{
         display:none;
+        
     }
 }
-@media screen and (max-width:580px){
-    header h1{
-        display:none;
+@media (max-width:630px){
+    header h1:before{
+        content: "C. Abel";
+    }
+    .Author_name{
+        display: none;
     }
     
     #outer_box h4{
