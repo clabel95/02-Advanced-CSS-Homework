@@ -18,24 +18,25 @@ header{
     color:white;
     height: max-content auto;
     padding-bottom: 20px;
-    display:flex;
+    display:inline-flex;
+    column-gap: 1%;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    align-items:center;
-    flex-shrink: 2 ;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
 }
 
+
 header h1{
+    justify-self:left; 
     background-color:#2C3531;
     color:white;
     font-size: 50px;
     padding-right: 1em;
-    flex-shrink: 2 ;
-    justify-self: left;
 }
 
 header img{
-    justify-self:right;
+   justify-self:left; 
 }
 
 /* controls the navbar main properties */
@@ -43,7 +44,7 @@ nav {
     right: 0px;
     background-color:#2C3531;
     display: flex;
-    justify-self:end;
+    justify-self: right;
     
 }
 
@@ -61,8 +62,8 @@ nav ul {
     justify-self:end;
 } 
 nav li{
-    right: 0px;
-    float:left;
+    /* right: 0px; */
+    float:right;
     justify-self:end;
 }
 
@@ -103,19 +104,20 @@ nav a {
     
 }
 
+/* code for the about me paragraph */
 .sections p{
     width:85%;
     height:100%;
     border-left:solid 3px #2C3531;
     padding-top: 2em;
     padding-bottom: 2em;
-}
-#about_me{
     padding-left:30px;
     padding-right:30px;
     font-size: 20px;
     line-height: 2em;
 }
+
+
 
 /* code that controls the work section */
 .sections_work{
@@ -155,6 +157,8 @@ nav a {
     align-items:center;
     
 }
+
+/* Code for the main project block */
 #main_project{
     background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
     background-size: cover;
@@ -221,9 +225,9 @@ nav a {
 however I changed my mind because I want to add the background image as a part of the css. 
 I might change it back later. */
 
-#smaller_projects a{
+/* #smaller_projects a{
     height: 40%;
-    background-image: url(../assets/images/coding_img.jpg);    
+     background-image: url(../assets/images/coding_img.jpg);     
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;        
 }
@@ -231,9 +235,11 @@ I might change it back later. */
 #smaller_projects a:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
     filter: opacity(80%);
-}
+} */
 
-/* .sml_prj_1{
+
+
+.sml_prj_1{
     height: 40%;
     background-image: url(../assets/images/coding_img.jpg);    
     border:var(--teal) 5px solid;
@@ -278,7 +284,7 @@ I might change it back later. */
 .sml_prj_4:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
     filter: opacity(80%);
-} */
+}
 
 
 #smaller_projects h3{
@@ -310,6 +316,7 @@ I might change it back later. */
     margin-right:2%;
     display:flex;
     align-items:center;
+    /* justify-content: space-between; */
     margin-top:20px;
     margin-bottom:20px;
     height: 120px;
@@ -328,18 +335,19 @@ I might change it back later. */
 
 .sections_contact ul {
     display: flex;
-    max-width:75%;
+    min-width:75%;
     /* min-width:40%; */
     /* width:fit-content; */
     height:100%;
-    justify-content: space-between;
-    /* margin-left:30px; */
-    /* margin-right:30px; */
+    justify-content: space-around;
+    margin-left:30px;
+    margin-right:30px;
     /* padding:10px; */
 }
 .sections_contact li{
     display:block;
-    min-width:20%;
+    width:100%;
+    justify-content: space-around;
     /* width: max-content; */
     height:100%;
 }
@@ -359,14 +367,15 @@ ion-icon:hover {
     header img{
         display:none;
     }
+    .sections_contact h2{
+        display:none;
+    }
 }
 @media screen and (max-width:580px){
     header h1{
         display:none;
     }
-    .sections_contact h2{
-        display:none;
-    }
+    
     #outer_box h4{
         display:none;
     }
