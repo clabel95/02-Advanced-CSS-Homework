@@ -6,6 +6,7 @@
 *{
     background-color: #D1E8E2;
     color:#2C3531;
+    /* width: auto; */
 }
 
 /* controls the header properties */
@@ -19,7 +20,7 @@ header{
     padding-bottom: 20px;
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    /* justify-content: space-between; */
     align-items:center;
     flex-shrink: 2 ;
 }
@@ -30,16 +31,25 @@ header h1{
     font-size: 50px;
     padding-right: 1em;
     flex-shrink: 2 ;
+    justify-self: left;
 }
+
+header img{
+    justify-self:right;
+}
+
 /* controls the navbar main properties */
 nav {
+    right: 0px;
     background-color:#2C3531;
     display: flex;
+    justify-self:end;
     
 }
 
 /* controls the nav bar list properties */
 nav ul {
+    right:0px;
     list-style-type:none;
     float:right;
     margin:0;
@@ -48,9 +58,12 @@ nav ul {
     min-width:20%;
     flex-direction: column;
     text-align:right;
+    justify-self:end;
 } 
 nav li{
+    right: 0px;
     float:left;
+    justify-self:end;
 }
 
 /* controls the nav bar link properties */
@@ -64,6 +77,7 @@ nav a {
     text-decoration:none;
     text-align: center;
     flex-shrink: 2 ;
+    justify-self:end;
 }
 
 
@@ -71,7 +85,7 @@ nav a {
 .sections{
     margin-right:2%;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     margin-top:20px;
     margin-bottom:20px;
     height: fit-content;
@@ -79,6 +93,8 @@ nav a {
 
 /* code that controls the about me header */
 .sections h2{
+    position: sticky;
+    top:7em;
     height: max-content;
     min-width:15%;
     width: fit-content;
@@ -105,7 +121,8 @@ nav a {
 .sections_work{
     margin-right:2%;
     display:flex;
-    align-items:center;
+    /* align-items:center; */
+    align-items: flex-start;
     margin-top:20px;
     margin-bottom:20px;
     height: 1000px;
@@ -113,18 +130,22 @@ nav a {
 
 /* code that controls the work header*/
 .sections_work h2{
-    border-right:solid 3px #2C3531;
+    position: sticky;
+    top:7em;
+    /* border-right:solid 3px #2C3531; */
     min-width:15%;
     width: fit-content;
     text-align:right;
     font-size:xx-large;
-    height:100%;
+    /* height:100%; */
      
 }
 
 
 /* this controls the outer box that holds the work examples */
 #outer_box{
+    border-left:solid 3px #2C3531;
+    padding-left:30px;
     margin-left:2%;
     display:flex;
     flex-direction:column;
@@ -151,25 +172,27 @@ nav a {
 }
 
 #main_project h3{
-    width: 20%;
-    height:50%;
+    width: 100%;
+    height:fit-content;
     padding-top:1%;
     flex-direction: column;
     justify-self: center;
-    text-align:center;
+    text-align:left;
     font-size: 150%;
     font-weight:bold;
     background-color:var(--teal);
     color:white;
 }
 
-#main_project p{
-    width: 20%;
-    height:50%;
-    text-align:center;
+#main_project h4{
+    width: 100%;
+    height:fit-content;
+    text-align:left;
     background-color:var(--teal);
     color:white;
+    padding-bottom: 5px;
 }
+
 
 
 /* this controls the box that holds the 4 projects that will be smaller on screen */
@@ -198,9 +221,22 @@ nav a {
 however I changed my mind because I want to add the background image as a part of the css. 
 I might change it back later. */
 
-.sml_prj_1{
+#smaller_projects a{
     height: 40%;
-    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
+    background-image: url(../assets/images/coding_img.jpg);    
+    border:var(--teal) 5px solid;
+    transition:all 0.5s ease-in-out;        
+}
+
+#smaller_projects a:hover{
+    box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
+}
+
+/* .sml_prj_1{
+    height: 40%;
+    background-image: url(../assets/images/coding_img.jpg);    
+    border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
     
 }
@@ -211,7 +247,7 @@ I might change it back later. */
 
 .sml_prj_2{
     height: 40%;
-    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
+    background-image: url(../assets/images/coding_img.jpg);    
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
@@ -222,7 +258,7 @@ I might change it back later. */
 
 .sml_prj_3{
     height: 40%;
-    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
+    background-image: url(../assets/images/coding_img.jpg);
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
@@ -232,31 +268,36 @@ I might change it back later. */
 }
 
 .sml_prj_4{
+    z-index:10;
     height: 40%;
-    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
+    background-image: url(../assets/images/coding_img.jpg);
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
+
 .sml_prj_4:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
     filter: opacity(80%);
-}
+} */
 
 
 #smaller_projects h3{
-    width: 20%;
-    height:50%;
-    text-align:center;
+    min-width: 20%;
+    width:100%;
+    height:fit-content;
+    text-align:left;
     font-size: 1.3em;
     font-weight:bold;
     background-color:var(--teal);
     border-top:solid var(--teal) 5px;
     color:white;
+
 }
-#smaller_projects p{
-    width: 20%;
-    height:50%;
-    text-align:center;
+#smaller_projects h4{
+    width: 100%;
+    height:fit-content;
+    padding-bottom:5px;
+    text-align:left;
     background-color:var(--teal);
     color:white;
 }
@@ -277,7 +318,8 @@ I might change it back later. */
 /* code that controls the three main sections headers */
 .sections_contact h2{
     border-right:solid 3px #2C3531;
-    width:15%;
+    min-width:15%;
+    width:fit-content;
     text-align:right;
     font-size:xx-large;
     height:100%;
@@ -286,12 +328,20 @@ I might change it back later. */
 
 .sections_contact ul {
     display: flex;
-    width: 75%;
+    max-width:75%;
+    /* min-width:40%; */
+    /* width:fit-content; */
     height:100%;
     justify-content: space-between;
-    margin-left:30px;
-    margin-right:30px;
-    padding:10px;
+    /* margin-left:30px; */
+    /* margin-right:30px; */
+    /* padding:10px; */
+}
+.sections_contact li{
+    display:block;
+    min-width:20%;
+    /* width: max-content; */
+    height:100%;
 }
 
 .social_icon{
@@ -303,4 +353,21 @@ I might change it back later. */
 
 ion-icon:hover {
     color:#116466;
+}
+
+@media screen and (max-width:780px){
+    header img{
+        display:none;
+    }
+}
+@media screen and (max-width:580px){
+    header h1{
+        display:none;
+    }
+    .sections_contact h2{
+        display:none;
+    }
+    #outer_box h4{
+        display:none;
+    }
 }
