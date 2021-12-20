@@ -19,7 +19,7 @@ header{
     top:0;
     background-color:#2C3531;
     color:white;
-    height: 5em;
+    height: fit-content;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -29,6 +29,7 @@ header h1{
     background-color:#2C3531;
     color:white;
     font-size: 50px;
+    padding-right: 2em;
 }
 /* controls the navbar main properties */
 nav {
@@ -64,25 +65,32 @@ nav a {
     align-items:center;
     margin-top:20px;
     margin-bottom:20px;
-    height: 400px;
+    height: fit-content;
 }
 
 /* code that controls the about me header */
 .sections h2{
-    border-right:solid 3px #2C3531;
+    /* border-right:solid 3px #2C3531; */
+    height: max-content;
     /* flex-basis: 150px; */
     width:15%;
     text-align:right;
     font-size:xx-large;
-    height:100%; 
+    
 }
 
 .sections p{
     width:85%;
     height:100%;
-    /* border:solid red 2px; */
+    border-left:solid 3px #2C3531;
     padding-top: 2em;
     padding-bottom: 2em;
+}
+#about_me{
+    padding-left:30px;
+    padding-right:30px;
+    font-size: 20px;
+    line-height: 2em;
 }
 
 /* code that controls the work section */
@@ -119,7 +127,9 @@ nav a {
     
 }
 #main_project{
-    border:var(--teal) 5px solid;
+    /* border:var(--teal) 5px solid; */
+    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
+    background-size: cover;
     margin-bottom:2%;
     width: 100%;
     height:60%;
@@ -127,11 +137,15 @@ nav a {
 }
 #main_project:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
+}
+#main_project a{
+    height:100%;
 }
 
 #main_project h3{
     width: 20%;
-    height:20%;
+    height:50%;
     padding-top:1%;
     flex-direction: column;
     justify-self: center;
@@ -144,7 +158,7 @@ nav a {
 
 #main_project p{
     width: 20%;
-    height:20%;
+    height:50%;
     text-align:center;
     background-color:var(--teal);
     color:white;
@@ -182,40 +196,46 @@ I might change it back later. */
 
 .sml_prj_1{
     height: 40%;
-    background-image: url("https://github.com/clabel95/02-Advanced-CSS-Homework/blob/cfe56b4e775b1f813097c351f5f80b44a74a0778/assets/images/Wireframe.png");
-    border:var(--teal) 5px solid;
+    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
     
 }
 .sml_prj_1:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
 }
 
 .sml_prj_2{
     height: 40%;
+    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
 .sml_prj_2:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
 }
 
 .sml_prj_3{
     height: 40%;
+    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
 .sml_prj_3:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
 }
 
 .sml_prj_4{
     height: 40%;
+    background-image: url(../assets/images/coding_img.jpg);    border:var(--teal) 5px solid;
     border:var(--teal) 5px solid;
     transition:all 0.5s ease-in-out;
 }
 .sml_prj_4:hover{
     box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
+    filter: opacity(80%);
 }
 
 

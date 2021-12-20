@@ -14,34 +14,39 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <header>
             <h1>Clayton Abel</h1>
+            <img src="../02-Advanced-CSS-Homework/assets/images/my_photo.png" alt="" />
             <nav>
                 <ul><!--Unordered list to serve as the nav bar at the top of my page-->
                     <li><a href="#nav_abt_me">About me</a></li>
                     <li><a href="#nav_work">Work</a></li>
                     <li><a href="#nav_contact">Contact me</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="../02-Advanced-CSS-Homework/assets/images/Resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <!-- added an image to add buffer between my headder and the content of the page.
-             This image will not be fixed to the top like the headder. -->
-            <section class="header_img">
-                <img src="imglocation" alt="" /><!--Update with an image and a descriptive alt-->
-            </section>
+
             <br id= "nav_abt_me">
             <br>
             <br>
             <br>
             <br>
 
-
             <!-- I am seperating each link in the nav bar into its own section so that it is easier to navigate. -->
             <section class="sections">
                 <h2>About me</h2>
-                <p id="about_me">"write stuff about yourself here whenever you finish setting everything up"</p>
+                <p id="about_me">"My name is Clayton Abel, I graduated from Abilene Christian University with a bachelors in Engineering.
+                    I have had many different job positions from Lab and Testfloor Technician to Desgin and Verification Engineer. 
+                    I am skilled in many different programing languages such as Python, Verilog, System Verilog, VHDL, TCL, 68HC11 assembly language,
+                    HTML, and CSS.<br>
+                    I have experience using many different programs and tools such as Silos, Modelsim, Libero, Spice, TurboCAD, Labview, Multisim, Design Spark, and many more.
+                    I am trained in VLSI Verification, UVM Methodologies, ISO 9100, FOD, ESD, and Counterfit part prevention.<br>
+                    I am currently enrolled and working through the UT Austin Coding Bootcamp which will help me become a Full Stack Web Developer. After the class I will be proficient
+                    in Javascript, HTML, CSS, jQuery, Bootstrap, Node.js, MySQL, MongoDB, Express.js, and React.js"
+                </p>
             </section>
+
             <br id= "nav_work">
             <br>
             <br>
@@ -54,9 +59,11 @@
                     <!-- I am not sure if i am overcomplicating things but for now i am going to have a main section then have divs inside of it to space things out properly  -->
                 <div id="outer_box">    
                     <div id= "main_project">
-                        <h3>Project Placeholder</h3>
-                        <p>Placeholder info</p>
-                            <!--I was planning on putting the image in the html however i realized it might be better if i put it as the background of the div in the css-->
+                        <!-- in the future I will switch out this link with the link of my projects that I make -->
+                        <a href="https://github.com/clabel95">
+                            <h3>Project Placeholder</h3>
+                            <p>Placeholder info</p>
+                        </a>    <!--I was planning on putting the image in the html however i realized it might be better if i put it as the background of the div in the css-->
                     </div>
 
                         <!-- inside this div I will have 4 seperate divs for the smaller projects. I am doing it this way so that it is easier to format and place in the css-->
@@ -65,15 +72,17 @@
                         <div id="left_block">
 
                             <div class="sml_prj_1">
-                                
-                                <h3>Project Placeholder</h3>
-                                <p>Placeholder info</p>
-                                
+                                <a href="https://github.com/clabel95">
+                                    <h3>Project Placeholder</h3>
+                                    <p>Placeholder info</p>
+                                </a>
                             </div>
 
                             <div class="sml_prj_2">
-                                <h3>Project Placeholder</h3>
-                                <p>Placeholder info</p>
+                                <a href="https://github.com/clabel95">
+                                    <h3>Project Placeholder</h3>
+                                    <p>Placeholder info</p>
+                                </a>
                             </div>
 
                         </div>
@@ -81,13 +90,17 @@
                         <div id="right_block">
                             
                             <div class="sml_prj_3">
-                                <h3>Project Placeholder</h3>
-                                <p>Placeholder info</p>
+                                <a href="https://github.com/clabel95">
+                                    <h3>Project Placeholder</h3>
+                                    <p>Placeholder info</p>
+                                </a>
                             </div>
 
                             <div class="sml_prj_4">
-                                <h3>Project Placeholder</h3>
-                                <p>Placeholder info</p>
+                                <a href="https://github.com/clabel95">
+                                    <h3>Project Placeholder</h3>
+                                    <p>Placeholder info</p>
+                                </a>
                             </div>
 
                         </div>
@@ -100,14 +113,7 @@
             <br>
             <br>
             <br>
-            <section class="sections_contact">
-                <h2>Contact me</h2>
-                <ul>
-                    <li><a class="social_icon" href="https://github.com/clabel95" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a class="social_icon" href="https://www.linkedin.com/in/clayton-abel"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li><a class="social_icon" href="mailto: clayton.abel.95@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
-                </ul>
-            </section>
+            
 
 
 
@@ -116,9 +122,14 @@
         </main>
 
         <footer>
-            <h4>
-        
-            </h4>
+            <section class="sections_contact">
+                <h2>Contact me</h2>
+                <ul>
+                    <li><a class="social_icon" href="https://github.com/clabel95" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a class="social_icon" href="https://www.linkedin.com/in/clayton-abel"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a class="social_icon" href="mailto: clayton.abel.95@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+            </section>    
         </footer>
     </body>
 </html>
