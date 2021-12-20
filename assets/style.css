@@ -6,7 +6,6 @@
 *{
     background-color: #D1E8E2;
     color:#2C3531;
-    /* width: auto; */
 }
 
 /* controls the header properties */
@@ -70,7 +69,6 @@ nav ul {
     justify-self:end;
 } 
 nav li{
-    /* right: 0px; */
     float:right;
     justify-self:end;
 }
@@ -131,7 +129,6 @@ nav a {
 .sections_work{
     margin-right:2%;
     display:flex;
-    /* align-items:center; */
     align-items: flex-start;
     margin-top:20px;
     margin-bottom:20px;
@@ -142,13 +139,10 @@ nav a {
 .sections_work h2{
     position: sticky;
     top:7em;
-    /* border-right:solid 3px #2C3531; */
     min-width:15%;
     width: fit-content;
     text-align:right;
     font-size:xx-large;
-    /* height:100%; */
-     
 }
 
 
@@ -233,20 +227,6 @@ nav a {
 however I changed my mind because I want to add the background image as a part of the css. 
 I might change it back later. */
 
-/* #smaller_projects a{
-    height: 40%;
-     background-image: url(../assets/images/coding_img.jpg);     
-    border:var(--teal) 5px solid;
-    transition:all 0.5s ease-in-out;        
-}
-
-#smaller_projects a:hover{
-    box-shadow:inset 0px 0px 10px 5px #116466, 0 0 20px 5px #116466;
-    filter: opacity(80%);
-} */
-
-
-
 .sml_prj_1{
     height: 40%;
     background-image: url(../assets/images/coding_img.jpg);    
@@ -324,7 +304,6 @@ I might change it back later. */
     margin-right:2%;
     display:flex;
     align-items:center;
-    /* justify-content: space-between; */
     margin-top:20px;
     margin-bottom:20px;
     height: 120px;
@@ -344,19 +323,15 @@ I might change it back later. */
 .sections_contact ul {
     display: flex;
     min-width:75%;
-    /* min-width:40%; */
-    /* width:fit-content; */
     height:100%;
     justify-content: space-around;
     margin-left:30px;
     margin-right:30px;
-    /* padding:10px; */
 }
 .sections_contact li{
     display:block;
     width:100%;
     justify-content: space-around;
-    /* width: max-content; */
     height:100%;
 }
 
